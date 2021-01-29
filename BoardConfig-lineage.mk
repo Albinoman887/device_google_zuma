@@ -6,6 +6,9 @@
 
 BUILD_BROKEN_ELF_PREBUILT_PRODUCT_COPY_FILES := true
 
+# Manifests
+DEVICE_FRAMEWORK_COMPATIBILITY_MATRIX_FILE += device/google/zuma/lineage_framework_matrix.xml
+
 # Partitions
 AB_OTA_PARTITIONS += \
     vendor \

@@ -5,7 +5,7 @@
 #
 
 # Overlays
-DEVICE_PACKAGE_OVERLAYS += device/google/zuma/overlay-calyx
+DEVICE_PACKAGE_OVERLAYS += device/google/zuma/overlay-rising
 
 # Camera
 PRODUCT_PRODUCT_PROPERTIES += \

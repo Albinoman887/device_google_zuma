@@ -41,7 +41,6 @@ BOARD_KERNEL_CMDLINE += stack_depot_disable=off page_pinner=on
 BOARD_KERNEL_CMDLINE += swiotlb=1024
 BOARD_KERNEL_CMDLINE += cgroup.memory=nokmem
 BOARD_KERNEL_CMDLINE += sysctl.kernel.sched_pelt_multiplier=4
-BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 ifeq (,$(filter %_fullmte,$(TARGET_PRODUCT)))
 BOARD_KERNEL_CMDLINE += kasan=off
 endif
@@ -390,10 +389,6 @@ BOARD_KERNEL_CMDLINE += log_buf_len=1024K
 
 # Protected VM firmware
 BOARD_PVMFWIMAGE_PARTITION_SIZE := 0x00100000
-
-# Manifests
-DEVICE_MANIFEST_FILE += \
-    device/google/zuma/android.hardware.security.rkp-service.citadel.xml
 
 # pick up library for cleaning digital car keys on factory reset
 -include vendor/google_devices/gs-common/proprietary/BoardConfigVendor.mk

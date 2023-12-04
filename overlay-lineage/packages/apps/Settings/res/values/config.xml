@@ -35,4 +35,5 @@
     <integer name="config_vibration_supported_intensity_levels">3</integer>
     <bool name="config_clear_calling_enabled">true</bool>
     <bool name="config_show_reverse_charging">true</bool>
+    <bool name="config_show_touch_sensitivity">true</bool>
 </resources>

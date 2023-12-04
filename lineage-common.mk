@@ -22,5 +22,12 @@ endif
 # Lineage Health
 include hardware/google/pixel/lineage_health/device.mk
 
+# Quick-tap (columbus)
+PRODUCT_COPY_FILES += \
+    device/google/zuma/sysconfig/quick_tap.xml:$(TARGET_COPY_OUT_PRODUCT)/etc/sysconfig/quick_tap.xml
+
+PRODUCT_PRODUCT_PROPERTIES += \
+    persist.columbus.use_ap_sensor=false
+
 # Touch
 include hardware/google/pixel/touch/device.mk
